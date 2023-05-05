@@ -24,9 +24,10 @@ function UsersTable() {
   return (
     <>
       {!loading && error ? <h1>An error occurred: {error.message}</h1> : <></>}
+
       {loading ? (
         <Spinner>Loading...</Spinner>
-      ) : (
+      ) : error == null ? (
         <Row>
           <Col xs={6}>
             <Table>
@@ -56,7 +57,7 @@ function UsersTable() {
             </Table>
           </Col>
         </Row>
-      )}
+      ) : null}
     </>
   );
 }
