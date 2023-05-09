@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-key */
-
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
-/* eslint-disable react/prop-types */
 function UserData({ data }) {
   return (
     <>
